@@ -151,8 +151,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a fake comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY0-iD-6vE">
-                                                    <rect key="frame" x="65" y="8" width="176" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY0-iD-6vE">
+                                                    <rect key="frame" x="65" y="7.9999999999999982" width="72.333333333333314" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -172,6 +172,28 @@
                                             <outlet property="commentLabel" destination="DY0-iD-6vE" id="Idf-1E-3d4"/>
                                             <outlet property="nameLabel" destination="blS-So-nK2" id="6Yt-tP-Ptl"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="pb6-Fl-JNx">
+                                        <rect key="frame" x="0.0" y="512.33333206176758" width="414" height="37.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pb6-Fl-JNx" id="xtm-al-Nwu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkk-j3-nuf">
+                                                    <rect key="frame" x="16" y="8.0000000000000018" width="390" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.33333994289340096" green="0.33333994289340096" blue="0.33333994289340096" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rkk-j3-nuf" firstAttribute="top" secondItem="xtm-al-Nwu" secondAttribute="top" constant="8" id="CE5-j2-6fT"/>
+                                                <constraint firstItem="rkk-j3-nuf" firstAttribute="leading" secondItem="xtm-al-Nwu" secondAttribute="leading" constant="16" id="OyF-6H-iYa"/>
+                                                <constraint firstAttribute="bottom" secondItem="rkk-j3-nuf" secondAttribute="bottom" constant="8" id="QOl-2c-PaD"/>
+                                                <constraint firstAttribute="trailing" secondItem="rkk-j3-nuf" secondAttribute="trailing" constant="8" id="kfl-w6-8Fg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
